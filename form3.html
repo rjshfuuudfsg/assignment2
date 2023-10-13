@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Standard Form</title>
+    
+    <style>
+        .table-container{
+            display: flex;
+           flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table{
+            margin: 15px;
+        }
+
+        .Personal-Details legend{
+            color: brown;
+        }
+
+        .Educational-Details legend{
+            color: brown;
+        }
+        .Personal-Details{
+            border: 2px solid black ;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .Educational-Details{
+            border: 2px solid black ;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .Submit{
+            background-color: maroon;
+            color: white;
+        }
+
+        .Submit:active {
+            background-color: white;
+        }
+         
+        .custom-label {
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            font-size: 16px; 
+        }
+        #one:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <form action="msg.html"> 
+        <div class="table-container">
+      <table>
+        <fieldset class="Personal-Details">
+            <legend><h2>Personal Details</h2></legend>
+        
+             <label class="custom-label" for="First Name">First Name</label>
+             <input type="text" id="First name" name="First Name" >
+             <br> <br>
+        
+             <label class="custom-label" for="Middle Name">Middle Name</label>
+             <input type="text" id="Middle name" name="Middle Name" >
+             <br> <br>
+        
+             <label class="custom-label" for="Last Name">Last Name</label>
+             <input type="text" id="Last name" name="Last Name" >
+             <br> <br>
+        
+             <label class="custom-label" for="Email">Email</label>
+             <input type="Email" id="Email" name="Email" >
+             <br> <br>
+        
+             <label class="custom-label" for="DOB">DOB</label>
+             <input type="date" id="DOB" name="DOB" >
+            </fieldset>
+      </table>
+    
+      <table>
+        
+        <fieldset class="Educational-Details">
+
+            <legend><h2>Educational Details</h2></legend>
+    
+         <label class="custom-label" for="Department">Department</label>
+         <br> <br>
+    
+         <input type="radio" id="CS" name="Department" >
+         <label class="custom-label" for="CS">CS</label>
+    
+         <input type="radio" id="Civil" name="Department" >
+         <label class="custom-label" for="Civil">Civil</label>
+    
+         <input type="radio" id="EC" name="Department" >
+         <label class="custom-label" for="EC">EC</label>
+    
+         <input type="radio" id="Mech" name="Department" >
+         <label class="custom-label" for="Mech">Mech</label>
+         <br> <br>
+    
+         <label class="custom-label" for="yog">Year of Graduation</label>
+         <input list="Year of Graduation" id="yog" name="yog">
+         <datalist id="Year of Graduation">
+           <option>2018</option>
+           <option>2019</option>
+           <option>2020</option>
+           <option>2021</option>
+           <option>2022</option>
+           <option>2023</option>
+         </datalist>
+         <br> <br>
+    
+    
+         <label class="custom-label" for="Skills">Skills</label>
+         <br> <br>
+    
+         <input type="checkbox" id="HTML" name="HTML" >
+         <label class="custom-label" for="HTML">HTML</label>
+         <br> <br>
+    
+         <input type="checkbox" id="Civil" name="CSS" >
+         <label class="custom-label" for="CSS">CSS</label>
+         <br> <br>
+    
+         <input type="checkbox" id="Javascript" name="Javascript" >
+         <label class="custom-label" for="Javascript">Javascript</label>
+         <br> <br>
+        
+        </fieldset>
+        <input type="Submit" id="one">
+      </table>
+    </div>
+       
+      
+     
+    </form>   
+</body>
+</html>

@@ -1,0 +1,24 @@
+.Personal-Details legend{
+    color:brown;
+}
+.Educational-Details legend{
+    color:brown;
+}
+.Personal-Details legend{
+    border: 2px solid blue;
+    padding: 10px;
+}
+.Educational-Details legend{
+    border: 2px solid blue;
+    padding: 10px;
+}
+.Submit{
+    background-color:maroon ;
+    color: white;
+}
+submit:active{
+    background-color: white;
+}
+label{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
